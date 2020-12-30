@@ -23,7 +23,6 @@ var i = 0;
 app.post('/submit', async (req, res) => {
     const { formattedText } = req.body;
     console.log(req.body)
-    console.log('github test.v2')
     const imdbScore = await scrapers.scrapeProduct(`https://www.google.com/search?q=${formattedText}`)
     console.log(imdbScore.rawTxt);
 })
