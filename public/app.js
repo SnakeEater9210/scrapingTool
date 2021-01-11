@@ -20,6 +20,8 @@ function getSelectionText() {
 
 }
 
+const submit = document.querySelector('#submit');
+
 submit.addEventListener('click', (e) => {
     getSelectionText();
     console.log('tasto premuto');
